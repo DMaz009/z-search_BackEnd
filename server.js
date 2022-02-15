@@ -5,10 +5,22 @@ const mongoose =require('mongoose')
 // const cors = require('cors')
 const MONGODB_URI = process.env.MONGODB_URI
 const PORT = process.env.PORT
+// const request = require('request')
 // const Study = require('.models/studiesModel')
 
 //Setup CORS Middleware
-
+// const allowedList = ['http://localhost:3000', 'http://localhost:3001']
+// const corsOptions = {
+//   origin: (origin, callback) => {
+//     if(allowedList.indexOf(origin) !== -1 || !origin) {
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   },
+// }
+//
+// app.use(cors(corsOptions))
 
 //Setup DB connection
 const db = mongoose.connection
