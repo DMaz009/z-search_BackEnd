@@ -5,7 +5,7 @@ const { Schema, model} = mongoose;
 const studySchema = new Schema({
   title: String,
   date: {type: Date, default: Date.now},
-  category: {type: String, enum: ['Cellular', 'Genetics', 'Biochemistry', 'Biophysics', 'Biotechnology', 'Nutrition', 'Microbiology', 'Immunology', 'Cognitive', 'Endocriniology', 'Gerontology']},
+  category: {type: String, enum: ['Cellular', 'Genetics', 'Biochemistry', 'Biotechnology', 'Nutrition', 'Microbiology', 'Immunology', 'Cognitive', 'Endocriniology', 'Gerontology']},
   variable: {type: String, maxLength: 40},
   hypothesis: {type: String, maxLength: 200},
   link: String,
