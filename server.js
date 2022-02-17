@@ -18,9 +18,12 @@ const corsOptions = {
       callback(new Error('Not allowed by CORS'))
     }
   },
+  credentials:true
 }
 
 app.use(cors(corsOptions))
+
+app.set('trust proxy', 1)
 
 //Setup DB connection
 const db = mongoose.connection

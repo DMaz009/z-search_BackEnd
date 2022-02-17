@@ -17,6 +17,5 @@ const studySchema = new Schema({
 
 
 
-
 module.exports = model('Study', studySchema)
 //

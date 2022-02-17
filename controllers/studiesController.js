@@ -44,10 +44,10 @@ studies.delete('/:id', (req, res) => {
 studies.put('/:id', (req, res) => {
   Study.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, updatedStudy) => {
     if (error) {
-      res.status(400).json({ error: message})
+      res.status(400).json({ error: error})
     } else {
       res.status(200).json({
-        message: `${updatedStudy.id} study updated successfully`,
+        message: "Study updated successfully",
         data: updatedStudy
       })
     }
