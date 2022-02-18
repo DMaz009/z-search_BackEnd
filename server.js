@@ -9,7 +9,7 @@ const PORT = process.env.PORT
 // const Study = require('.models/studiesModel')
 
 // Setup CORS Middleware
-const allowedList = ['http://localhost:3000', 'http://localhost:3003']
+const allowedList = ['http://localhost:3000', 'http://localhost:3003', 'https://zesearch-backend.herokuapp.com', "https://zesearch-frontend.herokuapp.com", "https://zesearch-backend.herokuapp.com/studies"]
 const corsOptions = {
   origin: (origin, callback) => {
     if(allowedList.indexOf(origin) !== -1 || !origin) {
